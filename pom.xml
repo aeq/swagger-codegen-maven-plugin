@@ -9,7 +9,7 @@
         <version>7</version>
     </parent>
 
-    <groupId>com.orange.apidsif.plugin</groupId>
+    <groupId>com.fincad</groupId>
     <artifactId>swagger-codegen-maven-plugin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
