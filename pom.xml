@@ -9,9 +9,9 @@
         <version>7</version>
     </parent>
 
-    <groupId>com.fincad</groupId>
+    <groupId>com.github.aeq</groupId>
     <artifactId>swagger-codegen-maven-plugin</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>fincad-0.0.1</version>
 
 	<prerequisites>
 		<maven>2.2.1</maven>
