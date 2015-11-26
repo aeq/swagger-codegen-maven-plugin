@@ -90,8 +90,6 @@ public class CodeGenMojo extends AbstractMojo {
     public void execute() throws MojoExecutionException {
         Swagger swagger = new SwaggerParser().read(inputSpec);
 
-        swagger.getDefinitions().remove("Filter");
-
         CodegenConfig config = forName(language);
         config.setOutputDir(output.getAbsolutePath());
 

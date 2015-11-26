@@ -11,7 +11,7 @@
 
     <groupId>com.github.aeq</groupId>
     <artifactId>swagger-codegen-maven-plugin</artifactId>
-    <version>fincad-0.0.3</version>
+    <version>fincad-0.0.4</version>
 
 	<prerequisites>
 		<maven>2.2.1</maven>
@@ -43,7 +43,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <swagger-codegen.version>2.1.2</swagger-codegen.version>
+        <swagger-codegen.version>2.1.4</swagger-codegen.version>
     </properties>
 
     <scm>
