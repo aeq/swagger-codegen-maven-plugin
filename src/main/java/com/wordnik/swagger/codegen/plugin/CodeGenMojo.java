@@ -122,21 +122,17 @@ public class CodeGenMojo extends AbstractMojo {
     }
 
     private CodegenConfig forName(String name) {
-System.out.println("0=====search config:" + name);           
         ServiceLoader<CodegenConfig> loader = ServiceLoader.load(CodegenConfig.class);
         for (CodegenConfig config : loader) {
             if (config.getName().equals(name)) {
-System.out.println("1=====found config:" + config);                
                 return config;
             }
         }
 
         // else try to load directly
         try {
-System.out.println("2=====search config by class:" + name);             
             return (CodegenConfig) Class.forName(name).newInstance();
         } catch (Exception e) {
-System.out.println("3=====config not found:" + name);              
             throw new RuntimeException("Can't load config class with name ".concat(name), e);
         }
     }
